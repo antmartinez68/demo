@@ -1,0 +1,13 @@
+*.pyc
+env*
+.mypy_cache
+.vscode
+.idea
+dist
+htmlcov
+*.egg-info
+.coverage
+coverage.xml
+site
+*.db
+.cache
