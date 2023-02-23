@@ -29,7 +29,7 @@ def main(
         exit(1)
     country_list = client.service.ListOfCountryNamesByName()
     country = find_country(country_list, country_iso_code)
-    print(f"The capital of {country} is {capital}")
+    print(f"The capital of [green]{country} is {capital}[/green]")
     print("Demo with love :purple_heart:")
 
 
