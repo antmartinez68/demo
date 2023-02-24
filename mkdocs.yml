@@ -1,0 +1,48 @@
+site_name: Demo
+site_url: https://example.com
+site_author: Antonio Martínez
+
+copyright: Copyright &copy; 2023 Antonio Martínez
+
+repo_url: https://github.com/antmartinez68/demo
+
+nav:
+  - Inicio rápido: 'README.md'
+  - Uso: cli.md
+
+theme:
+  name: "material"
+  language: es
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Cambiar a modo oscuro
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Cambiar a modo claro
+  icon:
+    logo: fontawesome/solid/building-columns
+    repo: fontawesome/brands/github-alt
+
+plugins:
+  - search
+  - mkdocstrings
+
+markdown_extensions:
+  - pymdownx.highlight
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+extra_css:
+  - css/termynal.css
+  - css/custom.css
+
+extra_javascript:
+  - https://unpkg.com/mermaid@8.4.6/dist/mermaid.min.js
+  - js/termynal.js
+  - js/custom.js
