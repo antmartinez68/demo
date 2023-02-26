@@ -17,7 +17,7 @@ Uso:
 ```console
 $ demo IT
 The capital of Italy is <span style="color:#A6E22E">Rome</span>
-Demo with love 💜
+Demo with love 💜💜
 
 ```
 
